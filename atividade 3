@@ -70,6 +70,8 @@ while True:
     else:
         print("Opção inválida.")
 
+/////////////////////////////////////////////////////////////////////////////
+
 // Inversor de texto
 const readline = require("readline/promises");
 
@@ -88,6 +90,8 @@ main();
 texto = input("Digite um texto: ")
 invertido = texto[::-1]
 print("Invertido:", invertido)
+
+/////////////////////////////////////////////////////////////////////////////
 
 // Calculadora de IMC
 const readline = require("readline/promises");
@@ -133,6 +137,8 @@ else:
     classificacao = "Obesidade"
 
 print(f"IMC: {imc:.2f} - {classificacao}")
+
+/////////////////////////////////////////////////////////////////////////////
 
 // FizzBuzz de 1 a 100
 for (let i = 1; i <= 100; i++) {
