@@ -1,1 +1,35 @@
+# Atividade 1 - Divisão segura
+try:
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    resultado = num1 / num2
+    print(f"Resultado: {resultado}")
+except ValueError:
+    print("Erro: digite apenas números.")
+except ZeroDivisionError:
+    print("Erro: não é possível dividir por zero.")
+finally:
+    print("Operação finalizada.")
+
+/////////////////////////////////////////////////////////////////////////////
+
+# Atividade 2 - Sistema de saque bancário
+try:
+    saldo = float(input("Informe o saldo da conta: "))
+    saque = float(input("Informe o valor do saque: "))
+
+    if saque <= 0:
+        raise Exception("o valor do saque deve ser maior que zero.")
+    if saque > saldo:
+        raise Exception("saldo insuficiente.")
+except ValueError:
+    print("Erro: digite um valor numérico válido.")
+except Exception as erro:
+    print(f"Erro: {erro}")
+else:
+    saldo_restante = saldo - saque
+    print("Saque realizado com sucesso!")
+    print(f"Saldo restante: R$ {saldo_restante:.2f}")
+finally:
+    print("Operação bancária finalizada.")
 
